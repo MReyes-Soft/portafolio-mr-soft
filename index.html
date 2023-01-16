@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miguel Reyes Sanchez</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -54,9 +60,9 @@
                     Soy un apacionado por la arquitectura y desarrollo de software.
                     con más de 1 años de experencia en varios lenguajes de programación y tecnologías
                 </p>
-                <button class="profile-btn">
+                <a class="profile-btn" href="cv/cv.html" download>
                     Descargar CV
-                </button>
+                </a>
             </div>
             <span class="profile-img-section">
                 <img class="profile-img" src="img/M.R.png" alt="programador">
@@ -137,16 +143,16 @@
                 <div class="contact-details-group">
                     <p class="contact-label">Dirección</p>
                     <p class="contact-text">Ferreñafe</p>
-                </div> 
+                </div>
                 <div class="contact-details-group">
                     <p class="contact-label">Email</p>
                     <p class="contact-text">miguelreyes@gmail.com</p>
                 </div>
                 <div class="contact-details-group">
                     <p class="contact-text">deje su mensaje</p>
-                </div>  
+                </div>
             </div>
-            <form class="contact-form">
+            <form class="contact-form" name="contact" netlify>
                 <div class="contact-form-group">
                     <label for="name">Nombre</label>
                     <input required type="text" name="name" id="name">
