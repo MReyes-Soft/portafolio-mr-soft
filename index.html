@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,34 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    
+
+    <script>
+        (function () {
+            const userTheme = localStorage.getItem("theme");
+            const darkQuery = window.matchMedia("(prefers-color-sheme: dark)");
+            if (userTheme === "dark" || (!userTheme && darkQuery.matches)) {
+                setTheme("dark")
+            }
+
+            darkQuery.addEventListener("change", function (e) {
+                if (!localStorage.getItem("theme")) {
+                    setTheme(e.matches ? "dark" : "light");
+                }
+
+            });
+
+            function setTheme(newTheme) {
+                document.documentElement.setAttribute("data-theme", newTheme);
+            }
+
+            window.__setUserTheme = function(newTheme) {
+                document.documentElement.setAttribute("data-theme", newTheme);
+                localStorage.setItem("theme", newTheme);
+            }
+        })();
+
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -26,6 +53,7 @@
     <link rel="stylesheet" href="css/contact.css">
 
     <script defer src="main/app.js"></script>
+    <script defer src="main/colorToggle.js"></script>
 </head>
 
 <body>
@@ -37,9 +65,7 @@
                     Miguel Reyes
                 </div>
             </a>
-            <button class="open-menu" aria-label="Abrir menu">
-                <img src="img/hamburger.svg" alt="abrir menú">
-            </button>
+
             <ul class="menu">
                 <button class="close-menu" aria-label="Cerrar menu">
                     <img src="img/close.svg" alt="cerrar menú">
@@ -50,6 +76,22 @@
                 <li><a href="#proyec">Proyecto</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
+            <button class="dark-mode-btn" aria-label="Activar modo oscuro">
+                <img src="img/sun.svg" alt="">
+            </button>
+            <button class="light-mode-btn" aria-label="Activar modo claro">
+                <img src="img/moon.svg" alt="">
+            </button>
+            <button class="open-menu" aria-label="Abrir menu">
+                <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 14.5H27" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M2 2H27" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M2 27H27" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
         </nav>
     </header>
     <div class="horizontal-padding vertical-padding">
@@ -72,7 +114,10 @@
     </div>
 
     <section class="experiences" id="experience">
-        <img src="img/wave.svg" alt="División" class="wave">
+        <svg class="wave" viewBox="0 0 1400 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M-15.0079 22.92C354.732 63.38 953.596 -55.05 1437.13 45.63L1400 55H6.55479e-05L-15.0079 22.92Z"
+                fill="currentColor" />
+        </svg>
         <div class="experiences-body">
             <h2 class="experiences-title">Experiencia</h2>
             <div class="experiences-grid">
@@ -117,7 +162,10 @@
                 </div>
             </div>
         </div>
-        <img src="img/wave.svg" alt="División" class="wave wave_bottom">
+        <svg class="wave wave_bottom" viewBox="0 0 1400 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M-15.0079 22.92C354.732 63.38 953.596 -55.05 1437.13 45.63L1400 55H6.55479e-05L-15.0079 22.92Z"
+                fill="currentColor" />
+        </svg>
     </section>
 
     <div class="horizontal-padding vertical-padding">

@@ -5,12 +5,45 @@
     --secondary-color:#F7C331;
     --text-color-inverse:white;
     --text-color:black;
-    --navbar-shallow-color:#e5e5e5;
     --menu-mobile-background-color:#3A4460;
     --menu-teal-background-color: #3f6766;
     
+    --accent-color: var(--primary-color);
+    --primary-color-inverse: black;
+
+    --navbar-shadow: 0 4px 5px #e5e5e5;
+    --tag-shadow: 0 4px 10px rgba(0, 0,0, 0.25);
+    --transition: 0.2s ease-in-out;
+    color-scheme: light;
 }
 
+/*@media (prefers-color-scheme: dark){*/
+:root[data-theme="dark"]{
+    --theme-color:#111827;
+    --primary-color:#243043;
+    --secondary-color:#9dc8bd;
+    --text-color-inverse:var(--text-color);
+    --text-color:rgba(255,255,255, 0.87);
+    --menu-mobile-background-color:##0f172a;
+
+    --accent-color: var(--secondary-color);
+    --navbar-shadow: 0 1px rgba(51, 65, 85, 0.8);
+    --tag-shadow: 0 0 0 1px #ffffff;
+    color-scheme: dark;
+}
+/*}*/
+
+form{
+    color-scheme: light;
+}
+
+*{
+    transition: background-color var(--transition), box-shadow var(--transition);
+}
+
+svg{
+    transition: color var(--transition);
+}
 
 html {
     scroll-behavior: smooth;
