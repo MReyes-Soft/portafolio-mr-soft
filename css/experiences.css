@@ -85,13 +85,14 @@
     
     .experience-description {
         font-weight: 200;
-        font-size: 12px;
+        font-size: 14px;
         margin-top: 10px;
     }
     
     
     .experience {
         min-width: 100px;
+        text-align: justify;
     }
 }
 
@@ -112,7 +113,7 @@
     
     .experience-position {
         font-weight: bold;
-        font-size: 20px;
+        font-size: 30px;
         margin-top: 20px;
     }
     
@@ -126,12 +127,10 @@
 
     .experience {
         padding: 0;
+        text-align: justify;
     }
     
 
-    .experience_left {
-        text-align: right;
-    }
     
     .experiences-grid {
         display: grid;
