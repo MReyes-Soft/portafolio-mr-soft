@@ -5,15 +5,54 @@
 
 
 .profile-img {
-    width: 80%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 -12px;
+    border-radius: 50%;
     max-width: 300px;
 }
 
 
 .profile-img-section {
     position: relative;
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
 }
 
+.profile-img-circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    border: 8px solid var(--text-color-inverse);
+    z-index: 1;
+}
+
+.profile-img-text-1, 
+.profile-img-text-2 {
+    position: absolute;
+    font-family: 'Rubik Wet Paint',sans-serif;
+    color: var(--primary-color);
+    font-size: clamp(15rem, 8vw, 55rem);
+    opacity: 1;
+    user-select: none;
+    z-index: -1;
+}
+
+.profile-img-text-1 {
+    top: -20%;
+    left: -35%;
+    transform: rotate(0deg);
+}
+
+.profile-img-text-2 {
+    bottom: -19%;
+    right: -35%;
+    transform: rotate(0deg);
+}
 
 
 .profile {
@@ -38,19 +77,31 @@
     text-align: justify;
 }
 
+.profile-button, .profile-cv,.profile-social-links{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
 .profile-btn {
-    background-color: var(--accent-color);
+    background: var(--terciry-color);
+    background: var(--gradient-color);
     color: var(--theme-color);
     border: none;
     font-size: 20px;
     padding: 0.5em 1em;
-    border-radius: 7px;
+    border-radius: 100px;
     cursor: pointer;
 }
 
+
 .profile-btn:hover {
     filter: brightness(130%);
+    background: var(--terciry-color);
+    animation-duration: 3ms;
 }
+
+
 
 @media (min-width: 950px) {
     .profile-info {
@@ -60,6 +111,7 @@
     
     .profile-img {
         width: 100%;
+        height: 100%;
         max-width: 350px;
         transform: scaleX(-1);
     }
@@ -75,24 +127,47 @@
     }
     
     .profile-title {
-        font-size: 60px;
+        font-size: 50px;
+    }
+
+    .profile-name {
+        font-size: 50px;
+    }
+
+    .profile-area {
+        font-size: 38px;
+        font-weight: 400;
+        text-transform: uppercase;
     }
     
     .profile-details {
         font-size: 25px;
         font-weight: 500;
         line-height: 1.3;
-        max-width: 450px;
+        max-width: 600px;
         margin: 30px 0;
     }
     
     .profile-btn {
         font-size: 28px;
         padding: 0.5em 1em;
-        
     }
     
     .profile-btn:hover {
         filter: brightness(130%);
+    }
+}
+
+
+@media (max-width: 950px) {
+    .profile {
+        display: flex;
+        flex-direction:column-reverse;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .profile-info{
+        margin-top: 25px;
     }
 }

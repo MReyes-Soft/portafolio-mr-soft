@@ -37,3 +37,10 @@ menuLinks.forEach((menuLink) => {
         observer.observe(target);
     }
 });
+
+new Typed(".typed", {
+    strings: ["Ingeniería de software con IA"],
+    loop:true,
+    typeSpeed:75,
+    backSpeed:75
+});
