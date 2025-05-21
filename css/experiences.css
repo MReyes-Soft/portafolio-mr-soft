@@ -3,7 +3,7 @@
     flex-direction: column;
 }
 .experiences-body {
-    background-color: var(--primary-color);
+    background-color: var(--menu-mobile-background-color);
     color: var(--text-color-inverse);
 }
 
@@ -12,7 +12,7 @@
     width: 100%;
     position: relative;
     top: 2px;
-    color: var(--primary-color);
+    color: var(--menu-mobile-background-color);
 }
 
 
@@ -38,7 +38,11 @@
 }
 
 
-/*.experience-comapany */
+.experience-company{
+    font-size: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
 
 
 .experience-position {
@@ -87,6 +91,7 @@
         font-weight: 200;
         font-size: 14px;
         margin-top: 10px;
+        letter-spacing: 1px;
     }
     
     
@@ -121,7 +126,8 @@
     .experience-description {
         font-size: 20px;
         margin-top: 10px;
-        line-height: 1.3;
+        line-height: 1.3em;
+        letter-spacing: 1px;
     }
 
 
