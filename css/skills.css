@@ -1,5 +1,5 @@
 .skills {
-    max-width: 1200px;
+    max-width: 980px;
     margin: 0 auto;
 }
 
@@ -7,56 +7,42 @@
 .skills-title {
     font-size: 30px;
     font-weight: bold;
+    text-transform: uppercase;
     text-align: center;
 }
 
 
-/* Skills Grid */
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1rem;
-    margin-top: 1.5rem;
+.skills-skill {
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: var(--tag-shadow);
+    border-radius: 42px;
+    padding: 0.5em 0.7em;
+    margin: 10px;
 }
 
-.skills-card {
-    text-align: center;
-    padding: 1rem;
-    background: var(--bg-card);
-    border-radius: 16px;
-    border: 1px solid var(--border-color);
-    transition: all 0.3s ease-out;
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.skills-card:hover{
-    transform: translateY(-5px);
-    border-color: var(--primary-color);
-}
-
-.skills-card i {
-    font-size: 2rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-.skills-name{
-    font-size: 1.2em;
-
-}
 
 @media (min-width: 950px) {
     .skills-title {
         font-size: 50px;
         
     }
-
-    .skills-card i {
-        font-size: 2.5rem;
+    
+    
+    .skills-skill {
+        font-size: 30px;
+        margin: 20px;
     }
     
-    .skills-name{
-        font-size: 1.4em;
-    
-    }
 
 }
