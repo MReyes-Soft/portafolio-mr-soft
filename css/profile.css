@@ -119,6 +119,11 @@
     box-shadow: var(--shadow-lg);
 }
 
+section#profile > div.profile-info > p.profile-greeting > img{
+    width: 35px;
+    height: 33px;
+}
+
 
 
 @media (min-width: 950px) {

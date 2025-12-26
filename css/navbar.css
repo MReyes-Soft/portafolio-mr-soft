@@ -49,9 +49,16 @@
     font-weight: 500;
     color: var(--primary-color);
     margin-right: auto;
+
+    
+    width: 50%;
+    aspect-ratio: 10 / 1;
 }
 
 .logo img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
     border-radius: 50%;
 }
 
@@ -67,6 +74,12 @@
 
 .menu li {
     padding: 0 15px;
+}
+
+.menu-close-container {
+    display: flex;
+    
+    align-self: flex-end;
 }
 
 .nav-link {
@@ -110,6 +123,12 @@
     align-items: center;
 }
 
+.light-mode-btn img{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
 .light-mode-btn, .dark-mode-btn, .lang-toggle {
     background: none;
     border: 2px solid var(--border-color);
@@ -136,6 +155,12 @@
 .close-menu {
     display: none;
     border: none;
+}
+
+.open-menu img,.close-menu img{
+    width: 29px;
+    height: 29px;
+    object-fit: cover;
 }
 
 @media (max-width: 950px) {
