@@ -38,11 +38,13 @@
 
 .project-image{
   width: 100%;
-  height: 40%;
+  
+  aspect-ratio: 16 / 9;
 }
 .project-image img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   border-radius: 2%;
   transition: transform 0.3s ease;
 }
