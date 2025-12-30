@@ -58,18 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// --- SCROLL EFFECTS (Header) ---
-window.addEventListener('scroll', () => {
-    if (topHeader) {
-        if (window.scrollY > 50) {
-            topHeader.style.background = 'rgba(255, 255, 255, 0.95)';
-            topHeader.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
-        } else {
-            topHeader.style.background = 'transparent';
-            topHeader.style.boxShadow = 'none';
-        }
-    }
-});
+
 
 // --- SMOOTH SCROLL CORREGIDO ---
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
