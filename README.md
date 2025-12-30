@@ -16,12 +16,13 @@ A continuación se muestran algunas vistas representativas del portafolio:
 
 - **Vista principal:** presentación del perfil profesional.
 <p align="center">
-  <img width="1908" height="905" alt="image" src="https://github.com/user-attachments/assets/5210f1ad-a80b-46f6-b0f9-42542c158357" width="100%" alt="vista principal" />
+  <img width="1908" height="905" alt="image" src="https://github.com/user-attachments/assets/d50e55c3-d124-44e9-90ec-6c5379c7a47e" alt="vista principal" />
 </p>
 
 - **Sección de experiencias y habilidades:** descripción de conocimientos técnicos.
 <p align="center">
-  <img width="1908" height="905" alt="image" src="https://github.com/user-attachments/assets/17fca5aa-923e-4e0a-b62f-e53fc158eb07" width="100%" alt="experiencia" />
+
+  <img width="1908" height="905" alt="image" src="https://github.com/user-attachments/assets/70b02517-32af-48e2-b9cd-5f0663547d21" width="100%" alt="experiencia" />
   <img width="1908" height="905" alt="image" src="https://github.com/user-attachments/assets/2cd8ac33-d00a-4f1a-907a-37befdd7f664" width="100%" alt="habilidades" />
 </p>
 - **Sección de Proyectos:** elaboracion del proyecto.
